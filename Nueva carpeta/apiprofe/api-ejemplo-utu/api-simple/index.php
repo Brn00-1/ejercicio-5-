@@ -219,11 +219,11 @@ try {
         //     // GET /ventas/resumen  (tiene que ir ANTES que GET /ventas/{id})
         //     (new VentaController())->salesSummary();
         //     break;
-
-        // case $method === 'GET' && $count === 2 && $parts[0] === 'ventas':
-        //     // GET /ventas/3
-        //     (new VentaController())->getSale($parts[1]);
-        //     break;
+//NetikaStudio
+         case $method === 'GET' && $count === 2 && $parts[0] === 'ventas':
+            // // GET /ventas/3
+             (new VentaController())->getSale($parts[1]);
+             break;
 
         // case $method === 'POST' && $count === 1 && $parts[0] === 'ventas':
         //     // POST /ventas
